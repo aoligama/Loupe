@@ -1,4 +1,29 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Loupe example app
+
+The dogfood target for [`react-native-loupe`](../packages/react-native/README.md).
+Each button drives something real — live GraphQL against a public endpoint,
+requests that genuinely 404 and fail DNS, console output at every level, and
+storage seeded across all three backends — so each panel can be judged against
+something that actually happened rather than a fixture.
+
+Every screenshot in the project READMEs comes from this app.
+
+<table>
+  <tr>
+    <td width="25%"><img src="../docs/media/overlay-bubble.png" alt="The example app with the Loupe bubble"></td>
+    <td width="25%"><img src="../docs/media/network-panel.png" alt="Network panel after tapping Fire GraphQL"></td>
+    <td width="25%"><img src="../docs/media/storage-keychain-masked.png" alt="Keychain values masked until tapped"></td>
+    <td width="25%"><img src="../docs/media/deeplink-panel.png" alt="Deeplink panel with saved links"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Tap the bubble</sub></td>
+    <td align="center"><sub><b>Fire GraphQL</b></sub></td>
+    <td align="center"><sub><b>Seed storage</b></sub></td>
+    <td align="center"><sub>Deep links</sub></td>
+  </tr>
+</table>
+
+This project was bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 

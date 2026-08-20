@@ -3,6 +3,15 @@
 An on-device debug overlay for React Native. Network, logs, storage, and deep
 links, inspected inside your own app — no desktop client, no cable.
 
+<table>
+  <tr>
+    <td width="25%"><img src="https://raw.githubusercontent.com/aoligama/Loupe/master/docs/media/launcher.png" alt="The Loupe launcher listing the four built-in panels"></td>
+    <td width="25%"><img src="https://raw.githubusercontent.com/aoligama/Loupe/master/docs/media/network-panel.png" alt="Network panel: GraphQL rows titled by operation name"></td>
+    <td width="25%"><img src="https://raw.githubusercontent.com/aoligama/Loupe/master/docs/media/log-panel.png" alt="Log panel with level filter chips"></td>
+    <td width="25%"><img src="https://raw.githubusercontent.com/aoligama/Loupe/master/docs/media/deeplink-panel.png" alt="Deeplink panel listing links you can fire"></td>
+  </tr>
+</table>
+
 ## Install
 
 ```sh
@@ -143,6 +152,14 @@ startLoupe({
 
 ## Storage panel
 
+<table>
+  <tr>
+    <td width="33%"><img src="https://raw.githubusercontent.com/aoligama/Loupe/master/docs/media/storage-json.png" alt="A stored JSON value rendered as a tree"></td>
+    <td width="33%"><img src="https://raw.githubusercontent.com/aoligama/Loupe/master/docs/media/storage-keychain-masked.png" alt="Keychain value masked until tapped, with copy hidden"></td>
+    <td width="34%"></td>
+  </tr>
+</table>
+
 Shows whatever backends you passed to `startLoupe({ storageAdapters })` — see
 [Optional backends](#optional-backends). Values are editable, filterable by key,
 and destructive actions are confirm-gated.
@@ -156,6 +173,14 @@ the exact bytes. Copy always hands over the original string, never the
 reformatted one.
 
 ## Network panel
+
+<table>
+  <tr>
+    <td width="33%"><img src="https://raw.githubusercontent.com/aoligama/Loupe/master/docs/media/network-panel.png" alt="Request list with GraphQL operations named and a 200 · 1 err row"></td>
+    <td width="33%"><img src="https://raw.githubusercontent.com/aoligama/Loupe/master/docs/media/network-graphql-error.png" alt="Detail view leading with the GraphQL errors array, and copy as curl"></td>
+    <td width="34%"></td>
+  </tr>
+</table>
 
 Requests, with the body, headers and timing of each.
 
@@ -179,6 +204,13 @@ JSON bodies render as a collapsible tree with `expand all`, a `raw` toggle for
 the exact bytes, and long string values that reveal in full on tap.
 
 ## Deeplink panel
+
+<table>
+  <tr>
+    <td width="33%"><img src="https://raw.githubusercontent.com/aoligama/Loupe/master/docs/media/deeplink-panel.png" alt="Deeplink panel with saved links, each with a fire and a remove control"></td>
+    <td width="67%"></td>
+  </tr>
+</table>
 
 Keeps a list of deep links you can fire from inside the app, and records every
 link the app receives — including the one that cold-started it. A fired link and
