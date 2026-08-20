@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "evt-0010",
+  "type": "deeplink",
+  "timestamp": 1750000002000,
+  "sourcePluginId": "deeplink",
+  "payload": {
+    "url": "loupeexample://product/42",
+    "direction": "outgoing",
+    "arrival": null,
+    "opened": true,
+    "error": null
+  }
+}

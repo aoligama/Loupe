@@ -1,0 +1,72 @@
+name: Bug report
+description: Something in Loupe behaves wrong, crashes, or doesn't match the docs.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. The more of this you fill in, the faster it gets fixed.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What went wrong, and what you expected instead.
+      placeholder: The storage panel crashed on open when I passed a Keychain adapter…
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: The smaller the repro, the better. A snippet of your `startLoupe(...)` call is often enough.
+      placeholder: |
+        1. `startLoupe({ storageAdapters: [...] })`
+        2. Open the overlay, tap Storage
+        3. …
+    validations:
+      required: true
+  - type: dropdown
+    id: entry
+    attributes:
+      label: Which entry point?
+      options:
+        - "Default (import 'react-native-loupe')"
+        - "Release (react-native-loupe/release)"
+        - "Not sure"
+    validations:
+      required: true
+  - type: dropdown
+    id: panel
+    attributes:
+      label: Which panel is involved?
+      options:
+        - Network
+        - Log
+        - Storage
+        - Deeplink
+        - A custom tool (registerTool)
+        - The overlay itself (bubble / launcher)
+        - Not panel-specific
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Fill in what applies.
+      value: |
+        - react-native-loupe version:
+        - react-native version:
+        - Platform (iOS / Android):
+        - New Architecture (Fabric/TurboModules) enabled? (yes / no / unsure):
+        - Optional packages passed in (AsyncStorage / MMKV / Keychain / shake):
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output
+      description: Any red-box text, Metro error, or stack trace. Paste it as text, not a screenshot, if you can.
+      render: shell
+    validations:
+      required: false

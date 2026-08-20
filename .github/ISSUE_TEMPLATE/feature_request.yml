@@ -1,0 +1,44 @@
+name: Feature or panel idea
+description: Suggest a capability, a new panel, or a change to how Loupe works.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Loupe stays small on purpose, so the "why" matters as much as the "what".
+        If you've already built this as a custom tool with `registerTool`, link it —
+        a working panel is the strongest possible proposal.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you hitting?
+      description: The debugging situation where Loupe falls short today.
+      placeholder: When my app retries a failed request, I can't tell the retries apart from the original…
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you add or change?
+      description: Your proposed shape for it. Rough is fine.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of change is this?
+      options:
+        - A new panel / tool
+        - A change to an existing panel
+        - Capture (network / log / storage)
+        - The overlay or launcher
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Anything you've already tried
+      description: Workarounds, a `registerTool` prototype, or why the existing panels don't cover it.
+    validations:
+      required: false

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or usage help
+    url: https://github.com/aoligama/Loupe/discussions
+    about: Not sure if it's a bug? Ask here first. Setup and "how do I…" questions belong in Discussions.
+  - name: Read the docs
+    url: https://github.com/aoligama/Loupe/blob/master/packages/react-native/README.md
+    about: Install, optional backends, the release entry, and writing your own tool are all covered here.

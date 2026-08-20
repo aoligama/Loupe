@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "evt-0003",
+  "type": "log",
+  "timestamp": 1750000001000,
+  "sourcePluginId": "log",
+  "payload": {
+    "level": "warn",
+    "message": "cache miss for key user:42",
+    "tag": null,
+    "source": "js",
+    "stackTrace": null,
+    "metadata": { "key": "user:42" }
+  }
+}

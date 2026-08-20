@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "evt-0001",
+  "type": "network",
+  "timestamp": 1750000000000,
+  "sourcePluginId": "network",
+  "payload": {
+    "requestId": "req-0001",
+    "status": "pending",
+    "url": "https://api.example.com/v1/items",
+    "method": "GET",
+    "requestHeaders": { "accept": "application/json" },
+    "requestBody": { "content": null, "encoding": "none", "size": 0, "truncated": false, "mimeType": null },
+    "startTime": 1750000000000,
+    "statusCode": null,
+    "responseHeaders": null,
+    "responseBody": null,
+    "endTime": null,
+    "durationMs": null,
+    "error": null,
+    "stack": "js",
+    "protocol": null
+  }
+}

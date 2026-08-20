@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "evt-0004",
+  "type": "log",
+  "timestamp": 1750000002000,
+  "sourcePluginId": "log",
+  "futureEnvelopeField": "ignore me",
+  "payload": {
+    "level": "info",
+    "message": "hello",
+    "tag": null,
+    "source": "js",
+    "stackTrace": null,
+    "metadata": null,
+    "futurePayloadField": 42
+  }
+}
